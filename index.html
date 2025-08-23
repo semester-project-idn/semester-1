@@ -3,16 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semester 1 Projects</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #4f46e5;
+            color: white;
+            width: 100%;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4f46e5;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0;
+        }
+
+        footer {
+            background: #111827;
+            color: #9ca3af;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.85rem;
+            margin-top: auto;
+        }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+                max-width: 700px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+
+            .card {
+                padding: 1.5rem 1rem;
+            }
+
+            .card a {
+                font-size: 1.1rem;
+            }
+
+            .card p {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Semester 1 Projects</h1>
-    <ul>
-        <li><a href="basic/index.html">Minggu 1 - Basic</a></li>
-        <li><a href="tailwind/index.html">Minggu 2 - Tailwind</a></li>
-        <li><a href="bootstrap/index.html">Minggu 3 - Bootstrap</a></li>
-    </ul>
+    <header>
+        <h1>Semester 1 Projects</h1>
+    </header>
+
+    <main>
+        <div class="grid">
+            <div class="card">
+                <a href="basic/index.html">Minggu 1 - Basic</a>
+                <p>Dasar HTML & CSS</p>
+            </div>
+            <div class="card">
+                <a href="tailwind/index.html">Minggu 2 - Tailwind</a>
+                <p>Belajar TailwindCSS</p>
+            </div>
+            <div class="card">
+                <a href="bootstrap/index.html">Minggu 3 - Bootstrap</a>
+                <p>Framework Bootstrap</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Farid | Semester 1 Projects
+    </footer>
 </body>
 
 </html>

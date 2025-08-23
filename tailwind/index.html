@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
+    <title>Minggu 2 - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>Minggu 2 - Tailwind</h2>
-    <ul>
-        <li><a href="day-1/index.html">Day 1</a></li>
-        <li><a href="day-2/index.html">Day 2</a></li>
-        <li><a href="day-3/index.html">Day 3</a></li>
-        <li><a href="day-4/index.html">Day 4</a></li>
-        <li><a href="day-5/index.html">Day 5</a></li>
-        <li><a href="day-6/index.html">Day 6</a></li>
-        <li><a href="day-7/index.html">Day 7</a></li>
-    </ul>
+
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white text-center py-6 shadow-md">
+        <h2 class="text-2xl font-semibold tracking-wide">Minggu 2 - Tailwind</h2>
+    </header>
+
+    <!-- Main -->
+    <main class="flex flex-1 justify-center items-start px-4 py-8">
+        <div class="bg-white rounded-xl shadow-lg w-full max-w-md p-6">
+            <ul class="space-y-3">
+                <li>
+                    <a href="day-1/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 1
+                    </a>
+                </li>
+                <li>
+                    <a href="day-2/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 2
+                    </a>
+                </li>
+                <li>
+                    <a href="day-3/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 3
+                    </a>
+                </li>
+                <li>
+                    <a href="day-4/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 4
+                    </a>
+                </li>
+                <li>
+                    <a href="day-5/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 5
+                    </a>
+                </li>
+                <li>
+                    <a href="day-6/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 6
+                    </a>
+                </li>
+                <li>
+                    <a href="day-7/index.html"
+                        class="block px-4 py-3 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-100 hover:text-indigo-800 transition">
+                        Day 7
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-4 text-sm">
+        &copy; 2025 Farid | Semester 1 Projects
+    </footer>
 </body>
+
 </html>
